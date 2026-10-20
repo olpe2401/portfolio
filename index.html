@@ -989,7 +989,7 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
        ================================================== */
 
     .op-hero {
-        padding: 130px 24px 64px;
+        padding: 110px 24px 64px;
     }
 
 
@@ -1047,7 +1047,7 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
        ================================================== */
 
     .op-header {
-        top: 24px;
+        top: 8px;
 
         padding: 0 12px;
 
@@ -1151,7 +1151,7 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
        ================================================== */
 
     .op-hero {
-        padding: 145px 20px 32px;
+        padding: 100px 20px 32px;
     }
 
 
@@ -1330,23 +1330,147 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
     }
 }
 
+/* VIEW ALL PROJECTS — FULL WIDTH ON MOBILE */
+
+@media (max-width: 600px) {
+    .op-work__all {
+        width: 100%;
+        min-height: 48px;
+        box-sizing: border-box;
+    }
+}
 
 /* ==================================================
-   REMOVE GAP BETWEEN CTA AND FOOTER
+   FOOTER
    ================================================== */
 
-.op-cta {
-    margin-bottom: 0 !important;
-}
-
-
-.op-cta + .op-footer {
-    margin-top: 0 !important;
-}
-
-
 .op-footer {
+    width: 100%;
     margin-top: 0 !important;
+    padding: 42px 40px;
+
+    box-sizing: border-box;
+
+    background: #222127;
+
+    font-family: "Manrope", sans-serif;
+}
+
+
+/* ==================================================
+   FOOTER INNER
+   ================================================== */
+
+.op-footer__inner {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+/* ==================================================
+   FOOTER LOGO
+   ================================================== */
+
+.op-footer__logo {
+    justify-self: start;
+
+    display: inline-flex;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+.op-footer__logo img {
+    display: block;
+
+    width: 180px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* ==================================================
+   FOOTER NAVIGATION
+   ================================================== */
+
+.op-footer__nav {
+    justify-self: center;
+
+    display: flex;
+    align-items: center;
+
+    gap: 48px;
+}
+
+.op-footer__nav a {
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 12px;
+    font-weight: 400;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.op-footer__nav a:hover {
+    color: #9279e4;
+}
+
+
+/* ==================================================
+   FOOTER SOCIALS
+   ================================================== */
+
+.op-footer__socials {
+    justify-self: end;
+
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+}
+
+.op-footer__socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    color: #f0edf7;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.op-footer__socials a:hover {
+    color: #9279e4;
+}
+
+.op-footer__socials svg {
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
+    fill: none;
+    stroke: currentColor;
+
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 
@@ -1355,18 +1479,22 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
    ================================================== */
 
 .op-footer__bottom {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 24px auto 0;
+    padding-top: 24px;
+
+    box-sizing: border-box;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     gap: 24px;
 
-    margin-top: 24px;
-    padding-top: 24px;
-
     border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
-
 
 .op-footer__bottom p {
     margin: 0;
@@ -1380,10 +1508,92 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 
 
 /* ==================================================
-   FOOTER BOTTOM — MOBILE
+   REMOVE GAP BETWEEN CTA AND FOOTER
    ================================================== */
 
-@media (max-width: 520px) {
+.op-cta {
+    margin-bottom: 0 !important;
+}
+
+.op-cta + .op-footer {
+    margin-top: 0 !important;
+}
+
+
+/* ==================================================
+   FOOTER — TABLET
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .op-footer {
+        padding: 40px 24px;
+    }
+
+    .op-footer__inner {
+        grid-template-columns: 1fr auto;
+    }
+
+    .op-footer__logo img {
+        width: 170px;
+    }
+
+    .op-footer__nav {
+        grid-column: 1 / -1;
+        grid-row: 2;
+
+        justify-self: start;
+
+        margin-top: 18px;
+    }
+}
+
+
+/* ==================================================
+   FOOTER — MOBILE
+   ================================================== */
+
+@media (max-width: 600px) {
+
+    .op-footer {
+        padding: 40px 20px;
+    }
+
+    .op-footer__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 28px;
+    }
+
+    .op-footer__logo img {
+        width: 155px;
+    }
+
+    .op-footer__nav {
+        flex-wrap: wrap;
+
+        gap: 18px 28px;
+
+        margin-top: 0;
+    }
+
+    .op-footer__socials {
+        justify-self: auto;
+
+        gap: 20px;
+    }
+
+    .op-footer__socials a {
+        width: 28px;
+        height: 28px;
+    }
+
+    .op-footer__socials svg {
+        width: 20px;
+        height: 20px;
+    }
 
     .op-footer__bottom {
         flex-direction: column;
@@ -1487,15 +1697,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
       <nav class="op-mobile-nav" aria-label="Mobile navigation">
 
-        <a href="/">
-          Home
-          <span>→</span>
-        </a>
+        <a href="/" class="op-mobile-nav__active">
+  Home
+  <span>→</span>
+</a>
 
-        <a href="/work/" class="op-mobile-nav__active">
-          Work
-          <span>→</span>
-        </a>
+<a href="/work/">
+  Work
+  <span>→</span>
+</a>
 
         <a href="/about/">
           About
@@ -2456,7 +2666,7 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>
 
 
-          <a class="op-project-card__button" href="/tidle/">
+          <a class="op-project-card__button" href="/tide/">
             View case
             <span>→</span>
           </a>
@@ -2631,6 +2841,17 @@ document.addEventListener('DOMContentLoaded', function () {
     object-position: center;
 }
 
+/* ==================================================
+   ABOUT PHOTO — CENTER ON TABLET + MOBILE
+   ================================================== */
+
+@media (max-width: 1000px) {
+    .op-about__photo-wrap {
+        justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 /* ==================================================
    TRAITS
