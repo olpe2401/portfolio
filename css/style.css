@@ -419,17 +419,6 @@ body {
     outline-offset: 3px;
 }
 
-
-/* =========================================================
-   MOBILE ELEMENTS — HIDDEN ON DESKTOP
-   ========================================================= */
-
-.op-menu-toggle,
-.op-mobile-menu {
-    display: none;
-}
-
-
 /* =========================================================
    HEADER — TABLET / MOBILE
    ========================================================= */
@@ -467,285 +456,279 @@ body {
         flex-shrink: 0;
     }
 
-
-    /* BURGER */
     .op-menu-toggle {
-        position: relative;
-        z-index: 20;
-
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        width: 44px;
-        height: 44px;
-
-        flex: 0 0 44px;
-
-        gap: 6px;
-
-        margin: 0;
-        padding: 0;
-
-        border: 0;
-        border-radius: 50%;
-
-        background: #8b78d7;
-
-        cursor: pointer;
-
-        appearance: none;
-        -webkit-appearance: none;
-    }
-
-    .op-menu-toggle span {
-        display: block;
-
-        width: 19px;
-        height: 2px;
-
-        flex: 0 0 2px;
-
-        margin: 0;
-        padding: 0;
-
-        border-radius: 10px;
-
-        background: #ffffff;
-
-        transition: transform 0.25s ease,
-        opacity 0.25s ease,
-        background-color 0.25s ease;
-    }
-
-
-    /* BURGER → X */
-    .op-header.is-menu-open .op-menu-toggle {
-        background: transparent;
-    }
-
-    .op-header.is-menu-open .op-menu-toggle span {
-        background: #8067d6;
-    }
-
-    .op-header.is-menu-open .op-menu-toggle span:first-child {
-        transform: translateY(4px) rotate(45deg);
-    }
-
-    .op-header.is-menu-open .op-menu-toggle span:last-child {
-        transform: translateY(-4px) rotate(-45deg);
-    }
-
-
-    /* FULLSCREEN MOBILE MENU */
-    .op-mobile-menu {
-        position: fixed;
-
-        top: 0;
-        left: 0;
-        z-index: 10;
-
-        width: 100%;
-        height: 100vh;
-        height: 100dvh;
-
-        padding: 120px 40px 54px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-
-        overflow-y: auto;
-
-        border: 0;
-        border-radius: 0;
-
-        background: #f8f7f4;
-
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
-
-        box-shadow: none;
-
-        opacity: 0;
-        visibility: hidden;
-
-        pointer-events: none;
-
-        transform: none;
-
-        transition: opacity 0.25s ease,
-        visibility 0.25s ease;
-    }
-
-    .op-header.is-menu-open .op-mobile-menu {
-        opacity: 1;
-        visibility: visible;
-
-        pointer-events: auto;
-    }
-
-
-    /* MOBILE NAVIGATION */
-    .op-mobile-nav {
-        width: 100%;
-        max-width: 420px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        gap: 0;
-    }
-
-    .op-mobile-nav a {
-        position: relative;
-
-        width: auto;
-        min-height: 0;
-
-        margin: 0 0 24px;
-        padding: 0 0 8px;
-
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-
-        border: 0;
-
-        color: #24212a;
-
-        font-family: "Manrope", sans-serif;
-        font-size: 22px;
-        font-weight: 500;
-        line-height: 1;
-
-        text-align: center;
-        text-decoration: none;
-    }
-
-    .op-mobile-nav a:last-child {
-        margin-bottom: 0;
-    }
-
-    .op-mobile-nav a:first-child {
-        border-top: 0;
-    }
-
-    .op-mobile-nav a span {
-        display: none;
-    }
-
-    .op-mobile-nav__active {
-        color: #24212a !important;
-    }
-
-    .op-mobile-nav__active::after {
-        content: "";
-
-        position: absolute;
-
-        left: 50%;
-        bottom: 0;
-
-        width: 40px;
-        height: 2px;
-
-        border-radius: 999px;
-
-        background: #8067d6;
-
-        transform: translateX(-50%);
-    }
-
-    /* MOBILE DOWNLOAD CV */
-    .op-mobile-cv {
-        width: auto;
-        min-width: 230px;
-        min-height: 58px;
-
-        margin-top: 0;
-        padding: 0 28px;
-
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-
-        gap: 14px;
-
-        border: 1px solid #9279e4;
-        border-radius: 12px;
-
-        background: #9279e4;
-        color: #ffffff;
-
-        font-family: "Manrope", sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 1;
-
-        text-decoration: none;
-
-        transition: background-color 0.18s ease,
-        border-color 0.18s ease,
-        color 0.18s ease,
-        transform 0.18s ease;
-    }
-
-    .op-mobile-cv svg {
-        display: block;
-
-        width: 20px;
-        height: 20px;
-
-        flex: 0 0 20px;
-    }
-
-    .op-mobile-cv:hover {
-        background: #8b70df;
-        border-color: #8b70df;
-        color: #ffffff;
-
-        transform: translateY(-1px);
-    }
-
-    .op-mobile-cv:active {
-        background: #7c5fd2;
-        border-color: #7c5fd2;
-        color: #ffffff;
-
-        transform: translateY(0);
-    }
-
-    .op-mobile-cv:focus-visible {
-        outline: 3px solid rgba(146, 121, 228, 0.28);
-        outline-offset: 3px;
-    }
-
-
-    /* BOTTOM PURPLE LINE */
-    .op-mobile-menu::after {
-        content: "";
-
-        position: absolute;
-
-        left: 40px;
-        right: 40px;
-        bottom: 36px;
-
-        height: 3px;
-
-        background: #8067d6;
     }
 }
 
 
+/* BURGER */
+.op-menu-toggle {
+    position: relative;
+    z-index: 20;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    flex: 0 0 44px;
+
+    gap: 6px;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: #8b78d7;
+
+    cursor: pointer;
+
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+@media (max-width: 900px) {
+    .op-menu-toggle {
+        display: flex;
+    }
+}
+
+.op-menu-toggle span {
+    display: block;
+
+    width: 19px;
+    height: 2px;
+
+    flex: 0 0 2px;
+
+    margin: 0;
+    padding: 0;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    transition: transform 0.25s ease,
+    opacity 0.25s ease,
+    background-color 0.25s ease;
+}
+
+
+/* BURGER → X */
+.op-header.is-menu-open .op-menu-toggle {
+    background: transparent;
+}
+
+.op-header.is-menu-open .op-menu-toggle span {
+    background: #8067d6;
+}
+
+.op-header.is-menu-open .op-menu-toggle span:first-child {
+    transform: translateY(4px) rotate(45deg);
+}
+
+.op-header.is-menu-open .op-menu-toggle span:last-child {
+    transform: translateY(-4px) rotate(-45deg);
+}
+
+
+/* FULLSCREEN MOBILE MENU */
+.op-mobile-menu {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+
+    padding: 120px 40px 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 40px;
+
+    overflow-y: auto;
+
+    border: 0;
+    border-radius: 0;
+
+    background: #f8f7f4;
+
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+
+    box-shadow: none;
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform: none;
+
+    transition: opacity 0.25s ease,
+    visibility 0.25s ease;
+}
+
+.op-header.is-menu-open .op-mobile-menu {
+    opacity: 1;
+    visibility: visible;
+
+    pointer-events: auto;
+}
+
+
+/* MOBILE NAVIGATION */
+.op-mobile-nav {
+    width: 100%;
+    max-width: 420px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0;
+}
+
+.op-mobile-nav a {
+    position: relative;
+
+    width: auto;
+    min-height: 0;
+
+    margin: 0 0 24px;
+    padding: 0 0 8px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+
+    color: #24212a;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+.op-mobile-nav a:last-child {
+    margin-bottom: 0;
+}
+
+.op-mobile-nav a:first-child {
+    border-top: 0;
+}
+
+.op-mobile-nav a span {
+    display: none;
+}
+
+.op-mobile-nav__active {
+    color: #24212a !important;
+}
+
+.op-mobile-nav__active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 40px;
+    height: 2px;
+
+    border-radius: 999px;
+
+    background: #8067d6;
+
+    transform: translateX(-50%);
+}
+
+/* MOBILE DOWNLOAD CV */
+.op-mobile-cv {
+    width: auto;
+    min-width: 230px;
+    min-height: 58px;
+
+    margin-top: 0;
+    padding: 0 28px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    border: 1px solid #9279e4;
+    border-radius: 12px;
+
+    background: #9279e4;
+    color: #ffffff;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+
+    text-decoration: none;
+
+    transition: background-color 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.op-mobile-cv svg {
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    flex: 0 0 20px;
+}
+
+.op-mobile-cv:hover {
+    background: #8b70df;
+    border-color: #8b70df;
+    color: #ffffff;
+
+    transform: translateY(-1px);
+}
+
+.op-mobile-cv:active {
+    background: #7c5fd2;
+    border-color: #7c5fd2;
+    color: #ffffff;
+
+    transform: translateY(0);
+}
+
+.op-mobile-cv:focus-visible {
+    outline: 3px solid rgba(146, 121, 228, 0.28);
+    outline-offset: 3px;
+}
+
 /* =========================================================
    HEADER — SMALL MOBILE
    ========================================================= */
-
 @media (max-width: 520px) {
 
     .op-header {
@@ -769,6 +752,7 @@ body {
     .op-menu-toggle {
         width: 42px;
         height: 42px;
+        display: flex;
 
         flex: 0 0 42px;
     }
@@ -806,11 +790,13 @@ body {
     }
 
     .op-mobile-cv {
-        width: auto;
-        min-width: 210px;
-        min-height: 56px;
+        width: 100%;
+        max-width: 420px;
+        min-width: 0;
+        min-height: 58px;
 
-        padding: 0 24px;
+        margin-top: 0;
+        padding: 0 28px;
 
         font-size: 16px;
         font-weight: 500;
@@ -826,7 +812,6 @@ body {
 /* =========================================================
    HOME — HERO
    ========================================================= */
-
 .op-hero {
     position: relative;
 
@@ -863,7 +848,6 @@ body {
 /* =========================================================
    HOME — HERO LABEL
    ========================================================= */
-
 .op-hero__label {
     display: inline-flex;
     align-items: center;
@@ -903,7 +887,6 @@ body {
 /* =========================================================
    HOME — HERO TITLE
    ========================================================= */
-
 .op-hero__title {
     margin: 0;
 
@@ -926,7 +909,6 @@ body {
 /* =========================================================
    HOME — HERO DESCRIPTION
    ========================================================= */
-
 .op-hero__text {
     max-width: 570px;
 
@@ -945,7 +927,6 @@ body {
 /* =========================================================
    HOME — HERO ACTIONS
    ========================================================= */
-
 .op-hero__actions {
     display: flex;
     align-items: center;
@@ -984,7 +965,6 @@ body {
 
 
 /* PRIMARY */
-
 .op-hero__primary {
     border: 1px solid #7358c7;
 
@@ -1009,7 +989,6 @@ body {
 }
 
 /* SECONDARY */
-
 .op-hero__secondary,
 .op-about__button {
     border: 1px solid #9279e4;
@@ -1067,7 +1046,6 @@ body {
 /* =========================================================
    HOME — HERO ILLUSTRATION
    ========================================================= */
-
 .op-hero__visual {
     position: absolute;
 
@@ -1100,7 +1078,6 @@ body {
 /* =========================================================
    HOME — HERO TABLET
    ========================================================= */
-
 @media (max-width: 900px) {
 
     .op-hero {
@@ -1150,7 +1127,6 @@ body {
 /* =========================================================
    HOME — HERO MOBILE
    ========================================================= */
-
 @media (max-width: 700px) {
 
     .op-hero {
@@ -1296,7 +1272,6 @@ body {
 /* =========================================================
    HOME — WHAT I DO
    ========================================================= */
-
 .op-services {
     width: 100%;
 
@@ -1328,7 +1303,6 @@ body {
 /* =========================================================
    SERVICES GRID
    ========================================================= */
-
 .op-services__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1340,7 +1314,6 @@ body {
 /* =========================================================
    SERVICE CARD
    ========================================================= */
-
 .op-service-card {
     position: relative;
 
@@ -1432,7 +1405,6 @@ body {
 /* =========================================================
    WHAT I DO — TABLET
    ========================================================= */
-
 @media (max-width: 900px) {
 
     .op-services {
@@ -1452,7 +1424,6 @@ body {
 /* =========================================================
    WHAT I DO — MOBILE
    ========================================================= */
-
 @media (max-width: 520px) {
 
     .op-services {
@@ -1484,7 +1455,6 @@ body {
 /* =========================================================
    HOME — SELECTED WORK
    ========================================================= */
-
 .op-work {
     width: 100%;
 
@@ -1506,7 +1476,6 @@ body {
 /* =========================================================
    SELECTED WORK — LABEL
    ========================================================= */
-
 .op-work__label {
     display: inline-flex;
     align-items: center;
@@ -1542,7 +1511,6 @@ body {
 /* =========================================================
    SELECTED WORK — HEADER
    ========================================================= */
-
 .op-work__header {
     display: flex;
     align-items: center;
@@ -1576,7 +1544,6 @@ body {
 /* =========================================================
    VIEW ALL PROJECTS
    ========================================================= */
-
 .op-work__all {
     display: inline-flex;
     align-items: center;
@@ -1612,7 +1579,6 @@ body {
 /* =========================================================
    SELECTED WORK — PROJECT GRID
    ========================================================= */
-
 .op-work__grid {
     display: grid;
 
@@ -1625,7 +1591,6 @@ body {
 /* =========================================================
    PROJECT CARD
    ========================================================= */
-
 .op-project-card {
     min-width: 0;
 
@@ -1642,7 +1607,6 @@ body {
 
 
 /* IMAGE */
-
 .op-project-card__image-wrap {
     width: 100%;
 
@@ -1670,7 +1634,6 @@ body {
 
 
 /* CONTENT */
-
 .op-project-card__content {
     flex: 1;
 
@@ -1713,7 +1676,6 @@ body {
 
 
 /* TAGS */
-
 .op-project-card__tags {
     display: flex;
     flex-wrap: wrap;
@@ -1745,7 +1707,6 @@ body {
 
 
 /* VIEW CASE BUTTON */
-
 .op-project-card__button {
     width: 100%;
     min-height: 38px;
@@ -1787,7 +1748,6 @@ body {
 /* =========================================================
    SELECTED WORK — TABLET
    ========================================================= */
-
 @media (max-width: 900px) {
 
     .op-work {
@@ -1807,7 +1767,6 @@ body {
 /* =========================================================
    SELECTED WORK — MOBILE
    ========================================================= */
-
 @media (max-width: 600px) {
 
     .op-work {
@@ -1851,7 +1810,6 @@ body {
 /* =========================================================
    HOME — ABOUT ME
    ========================================================= */
-
 .op-about {
     width: 100%;
 
@@ -1873,7 +1831,6 @@ body {
 /* =========================================================
    ABOUT — LABEL
    ========================================================= */
-
 .op-about__label {
     display: inline-flex;
     align-items: center;
@@ -1911,7 +1868,6 @@ body {
 /* =========================================================
    ABOUT — TOP
    ========================================================= */
-
 .op-about__top {
     position: relative;
 
@@ -1933,7 +1889,6 @@ body {
 /* =========================================================
    ABOUT — TITLE
    ========================================================= */
-
 .op-about__title {
     margin: 0;
 
@@ -1955,7 +1910,6 @@ body {
 /* =========================================================
    ABOUT — INTRO
    ========================================================= */
-
 .op-about__intro {
     max-width: 720px;
 
@@ -1972,7 +1926,6 @@ body {
 /* =========================================================
    ABOUT — PHOTO
    ========================================================= */
-
 .op-about__photo-wrap {
     width: 300px;
     height: 300px;
@@ -2000,7 +1953,6 @@ body {
 /* =========================================================
    ABOUT — TRAITS
    ========================================================= */
-
 .op-about__traits {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2072,7 +2024,6 @@ body {
 /* =========================================================
    ABOUT — TABLET
    ========================================================= */
-
 @media (max-width: 1000px) {
 
     .op-about__top {
@@ -2104,7 +2055,6 @@ body {
 /* =========================================================
    ABOUT — MOBILE
    ========================================================= */
-
 @media (max-width: 700px) {
 
     .op-about {
@@ -2159,7 +2109,6 @@ body {
 /* =========================================================
    HOME — CTA
    ========================================================= */
-
 .op-cta {
     width: 100%;
 
@@ -2190,7 +2139,6 @@ body {
 /* =========================================================
    CTA — TITLE
    ========================================================= */
-
 .op-cta__title {
     margin: 0;
 
@@ -2210,7 +2158,6 @@ body {
 /* =========================================================
    CTA — TEXT
    ========================================================= */
-
 .op-cta__text {
     margin: 0;
 
@@ -2225,7 +2172,6 @@ body {
 /* =========================================================
    CTA — BUTTON
    ========================================================= */
-
 .op-cta__button {
     min-width: 180px;
     min-height: 48px;
@@ -2279,7 +2225,6 @@ body {
 /* =========================================================
    CTA — TABLET
    ========================================================= */
-
 @media (max-width: 900px) {
 
     .op-cta {
@@ -2303,7 +2248,6 @@ body {
 /* =========================================================
    CTA — MOBILE
    ========================================================= */
-
 @media (max-width: 600px) {
 
     .op-cta {
@@ -2337,7 +2281,6 @@ body {
 /* =========================================================
    FOOTER
    ========================================================= */
-
 .op-footer {
     width: 100%;
 
@@ -2367,7 +2310,6 @@ body {
 /* =========================================================
    FOOTER — LOGO
    ========================================================= */
-
 .op-footer__logo {
     justify-self: start;
 
@@ -2390,7 +2332,6 @@ body {
 /* =========================================================
    FOOTER — NAVIGATION
    ========================================================= */
-
 .op-footer__nav {
     justify-self: center;
 
@@ -2419,7 +2360,6 @@ body {
 /* =========================================================
    FOOTER — SOCIALS
    ========================================================= */
-
 .op-footer__socials {
     justify-self: end;
 
@@ -2469,7 +2409,6 @@ body {
 /* =========================================================
    FOOTER — BOTTOM
    ========================================================= */
-
 .op-footer__bottom {
     width: 100%;
     max-width: 1280px;
@@ -2501,7 +2440,6 @@ body {
 /* =========================================================
    FOOTER — TABLET
    ========================================================= */
-
 @media (max-width: 900px) {
 
     .op-footer {
@@ -2530,7 +2468,6 @@ body {
 /* =========================================================
    FOOTER — MOBILE
    ========================================================= */
-
 @media (max-width: 600px) {
 
     .op-footer {
@@ -2584,7 +2521,6 @@ body {
 /* =========================================================
    WORK PAGE — HERO
    ========================================================= */
-
 .op-work-hero {
     position: relative;
 
@@ -2621,7 +2557,6 @@ body {
 /* =========================================================
    WORK HERO — LABEL
    ========================================================= */
-
 .op-work-hero__label {
     display: inline-flex;
     align-items: center;
@@ -2660,7 +2595,6 @@ body {
 /* =========================================================
    WORK HERO — TITLE
    ========================================================= */
-
 .op-work-hero__title {
     margin: 0;
 
@@ -2680,7 +2614,6 @@ body {
 /* =========================================================
    WORK HERO — TEXT
    ========================================================= */
-
 .op-work-hero__text {
     max-width: 620px;
 
@@ -2697,7 +2630,6 @@ body {
 /* =========================================================
    WORK HERO — VISUAL
    ========================================================= */
-
 .op-work-hero__visual {
     position: absolute;
 
@@ -2773,7 +2705,6 @@ body {
 /* =========================================================
    WORK PAGE — PROJECT
    ========================================================= */
-
 .op-work-project {
     width: 100%;
 
@@ -2811,7 +2742,6 @@ body {
 /* =========================================================
    PROJECT NUMBER
    ========================================================= */
-
 .op-work-project__number {
     position: absolute;
 
@@ -2836,7 +2766,6 @@ body {
 /* =========================================================
    PROJECT TITLE
    ========================================================= */
-
 .op-work-project__title {
     margin: 0;
 
@@ -2852,7 +2781,6 @@ body {
 /* =========================================================
    PROJECT SUBTITLE
    ========================================================= */
-
 .op-work-project__subtitle {
     margin: 24px 0 0;
 
@@ -2867,7 +2795,6 @@ body {
 /* =========================================================
    PROJECT DESCRIPTION
    ========================================================= */
-
 .op-work-project__description {
     max-width: 560px;
 
@@ -2884,7 +2811,6 @@ body {
 /* =========================================================
    PROJECT TAGS
    ========================================================= */
-
 .op-work-project__tags {
     display: flex;
     flex-wrap: wrap;
@@ -2932,7 +2858,6 @@ body {
 /* =========================================================
    PROJECT BUTTON
    ========================================================= */
-
 .op-work-project__button {
     display: inline-flex;
     align-items: center;
@@ -2980,7 +2905,6 @@ body {
 /* =========================================================
    PROJECT IMAGE
    ========================================================= */
-
 .op-work-project__visual {
     width: 100%;
     max-width: 570px;
@@ -3004,7 +2928,6 @@ body {
 /* =========================================================
    WORK PROJECT — DARK
    ========================================================= */
-
 .op-work-project--dark {
     background: #222127;
 }
@@ -3028,7 +2951,6 @@ body {
 /* =========================================================
    WORK PROJECT — REVERSE
    ========================================================= */
-
 .op-work-project--reverse .op-work-project__content {
     order: 1;
 }
@@ -3041,7 +2963,6 @@ body {
 /* =========================================================
    WORK PAGE — TABLET
    ========================================================= */
-
 @media (max-width: 1000px) {
 
     .op-work-hero {
@@ -3050,16 +2971,42 @@ body {
 
     .op-work-hero__inner {
         min-height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 48px;
     }
 
     .op-work-hero__content {
-        width: 65%;
+        width: 100%;
+        max-width: 720px;
     }
 
     .op-work-hero__visual {
-        right: -320px;
+        position: relative;
 
-        max-width: 1500px;
+        top: auto;
+        right: auto;
+        left: auto;
+
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+
+        transform: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .op-work-hero__visual img,
+    .op-work-hero__image {
+        width: 100%;
+        max-width: 760px;
+        height: auto;
     }
 
     .op-work-project {
@@ -3077,7 +3024,6 @@ body {
 /* =========================================================
    WORK PAGE — MOBILE
    ========================================================= */
-
 @media (max-width: 700px) {
 
     .op-work-hero {
@@ -3813,101 +3759,6 @@ body {
     min-width: 180px;
 }
 
-
-/* =========================================================
-   ABOUT — FOOTER
-   ========================================================= */
-.op-about-page .op-about-footer {
-    width: 100%;
-    padding: 48px 40px 28px;
-
-    background: #24212A;
-    color: #FFFFFF;
-}
-
-.op-about-page .op-about-footer__inner {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.op-about-page .op-about-footer__top {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-
-    gap: 40px;
-    align-items: center;
-}
-
-.op-about-page .op-about-footer__logo {
-    display: block;
-
-    width: 150px;
-    height: auto;
-}
-
-.op-about-page .op-about-footer__nav {
-    display: flex;
-    gap: 42px;
-}
-
-.op-about-page .op-about-footer__nav a,
-.op-about-page .op-about-footer__socials a {
-    color: rgba(255, 255, 255, .75);
-
-    font-size: 13px;
-    text-decoration: none;
-
-    transition: color .18s ease;
-}
-
-.op-about-page .op-about-footer__nav a:hover,
-.op-about-page .op-about-footer__socials a:hover {
-    color: #FFFFFF;
-}
-
-.op-about-page .op-about-footer__socials {
-    justify-self: end;
-
-    display: flex;
-    gap: 20px;
-}
-
-.op-about-page .op-about-footer__socials a {
-    width: 25px;
-    height: 25px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.op-about-page .op-about-footer__socials svg {
-    display: block;
-
-    width: 17px;
-    height: 17px;
-}
-
-.op-about-page .op-about-footer__bottom {
-    margin-top: 34px;
-    padding-top: 22px;
-
-    display: flex;
-    justify-content: space-between;
-
-    border-top: 1px solid rgba(255, 255, 255, .12);
-}
-
-.op-about-page .op-about-footer__bottom p {
-    margin: 0;
-
-    color: rgba(255, 255, 255, .45);
-
-    font-size: 12px;
-}
-
-
 /* =========================================================
    ABOUT — TABLET
    ========================================================= */
@@ -3944,6 +3795,26 @@ body {
     .op-about-page .op-about-do__cards {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 18px;
+    }
+
+    .op-about-page .op-about-hero__visual {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .op-about-page .op-about-hero__visual img {
+        margin: 0 auto;
+    }
+
+    .op-about-page .op-about-skills__visual {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .op-about-page .op-about-skills__visual img {
+        margin: 0 auto;
     }
 
 
@@ -3989,21 +3860,6 @@ body {
 
     .op-about-page .op-about-more__button {
         grid-column: 2;
-        justify-self: start;
-    }
-
-
-    /* FOOTER */
-    .op-about-page .op-about-footer {
-        padding: 48px 24px 26px;
-    }
-
-    .op-about-page .op-about-footer__top {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .op-about-page .op-about-footer__socials {
         justify-self: start;
     }
 }
@@ -4217,28 +4073,6 @@ body {
 
         font-size: 16px;
     }
-
-
-    /* FOOTER */
-    .op-about-page .op-about-footer {
-        padding: 42px 20px 24px;
-    }
-
-    .op-about-page .op-about-footer__logo {
-        width: 130px;
-    }
-
-    .op-about-page .op-about-footer__nav {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 18px 38px;
-    }
-
-    .op-about-page .op-about-footer__bottom {
-        flex-direction: column;
-        gap: 8px;
-    }
 }
 
 /* =========================================================
@@ -4253,7 +4087,6 @@ body {
 /* =========================================================
    CONTACT — COMMON LABEL
    ========================================================= */
-
 .op-section-label {
     width: fit-content;
     max-width: max-content;
@@ -4751,9 +4584,16 @@ body {
     }
 
     .op-contact .op-contact-bottom__map {
+        width: 100%;
+
         margin-top: 45px;
 
-        justify-content: flex-start;
+        display: flex;
+        justify-content: center;
+    }
+
+    .op-contact .op-contact-bottom__map img {
+        margin: 0 auto;
     }
 
     .op-contact .op-contact-bottom__drawing {
@@ -4938,7 +4778,6 @@ body {
 /* =========================================================
    TAXAGENT — STORY VISUAL
    ========================================================= */
-
 .op-case--taxagent .op-case__story-visual {
     width: 100%;
 
@@ -6116,7 +5955,6 @@ body {
 /* =========================================================
    AI CHAT — PROJECT-SPECIFIC
    ========================================================= */
-
 /* =========================================================
    AI CHAT — STORY
    ========================================================= */
@@ -6570,7 +6408,6 @@ body {
 /* =========================================================
    WORK PAGE — TABLET
    ========================================================= */
-
 @media (max-width: 900px) {
 
     .op-other-projects {
@@ -6595,7 +6432,6 @@ body {
 /* =========================================================
    WORK PAGE — MOBILE
    ========================================================= */
-
 @media (max-width: 700px) {
 
     .op-other-projects {
@@ -6685,7 +6521,6 @@ body {
 /* =========================================================
    ACCESSIBILITY — PRIMARY BUTTON COLORS
    ========================================================= */
-
 .op-cv,
 .op-mobile-cv,
 .op-hero__primary,
