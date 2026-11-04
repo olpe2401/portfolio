@@ -1,0 +1,1207 @@
+/* =========================================================
+   CASE STUDY — COMMON
+   ========================================================= */
+.op-case {
+    width: 100%;
+
+    background: #F8F7F4;
+    color: #24212A;
+
+    font-family: "Manrope", sans-serif;
+}
+
+
+/* =========================================================
+   CASE STUDY — INTRO
+   ========================================================= */
+.op-case .op-case-intro {
+    width: 100%;
+    margin: 0;
+
+    padding: 160px 40px 64px;
+}
+
+.op-case .op-case-intro__inner {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   CASE STUDY — BREADCRUMBS
+   ========================================================= */
+.op-case .op-case-breadcrumbs {
+    margin: 0 0 28px;
+
+    color: #6F6A75;
+
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.op-case .op-case-breadcrumbs a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.op-case .op-case-breadcrumbs > span:first-of-type {
+    margin: 0 8px;
+}
+
+
+/* =========================================================
+   CASE STUDY — INTRO GRID
+   ========================================================= */
+.op-case .op-case-intro__grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, .85fr)
+        minmax(0, 1.15fr);
+
+    gap: 72px;
+}
+
+.op-case .op-case-intro__main {
+    padding-right: 58px;
+
+    border-right: 1px solid #DEDCE1;
+}
+
+
+/* =========================================================
+   CASE STUDY — LABEL
+   ========================================================= */
+.op-case .op-case-label {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 10px;
+
+    min-height: 38px;
+    padding: 0 13px;
+
+    border: 1px solid #DDDADF;
+    border-radius: 999px;
+
+    color: #24212A;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.op-case .op-case-label__dot {
+    width: 20px;
+    height: 20px;
+
+    flex: 0 0 20px;
+
+    border-radius: 50%;
+
+    background: #9279E4;
+}
+
+
+/* =========================================================
+   CASE STUDY — TITLE
+   ========================================================= */
+.op-case .op-case-title {
+    margin: 30px 0 20px;
+
+    color: #1D1A22;
+
+    font-size: clamp(50px, 5vw, 70px);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -.05em;
+}
+
+.op-case .op-case-lead {
+    max-width: 520px;
+
+    margin: 0;
+
+    color: #24212A;
+
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.35;
+    letter-spacing: -.025em;
+}
+
+
+/* =========================================================
+   CASE STUDY — TAGS
+   ========================================================= */
+.op-case .op-case-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 28px;
+}
+
+.op-case .op-case-tags span {
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 32px;
+    padding: 0 12px;
+
+    border-radius: 8px;
+
+    background: #24212A;
+    color: #FFFFFF;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   CASE STUDY — META
+   ========================================================= */
+.op-case .op-case-meta {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 30px 50px;
+
+    align-content: center;
+}
+
+.op-case .op-case-meta__item {
+    display: grid;
+
+    grid-template-columns:
+        48px minmax(0, 1fr);
+
+    gap: 14px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   CASE STUDY — ICONS
+   ========================================================= */
+.op-case .op-case-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    flex: 0 0 48px;
+
+    border-radius: 10px;
+
+    background: #EEE9FD;
+    color: #7658D8;
+}
+
+.op-case .op-case-icon svg {
+    display: block;
+
+    width: 26px;
+    height: 26px;
+}
+
+.op-case .op-case-icon--brush svg {
+    width: 29px;
+    height: 29px;
+}
+
+.op-case .op-case-meta__item h3 {
+    margin: 1px 0 7px;
+
+    color: #716B78;
+
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.op-case .op-case-meta__item p {
+    margin: 0;
+
+    color: #24212A;
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   CASE STUDY — CHALLENGE + APPROACH
+   ========================================================= */
+.op-case .op-case-story {
+    width: 100%;
+
+    margin: 0;
+    padding: 0 40px 74px;
+}
+
+.op-case .op-case-story__inner {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr .8fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   CASE STUDY — STORY VISUAL
+   ========================================================= */
+.op-case .op-case-story__visual {
+    width: 100%;
+    min-width: 0;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+}
+
+.op-case .op-case-story__visual img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================================================
+   CASE STUDY — STORY CONTENT
+   ========================================================= */
+.op-case .op-case-story__content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 42px;
+}
+
+.op-case .op-case-story__item {
+    display: grid;
+
+    grid-template-columns:
+        48px minmax(0, 1fr);
+
+    gap: 16px;
+}
+
+.op-case .op-case-story__item h3 {
+    margin: 0 0 8px;
+
+    color: #716B78;
+
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.op-case .op-case-story__headline {
+    margin: 0 0 7px;
+
+    color: #3A3540;
+
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.35;
+}
+
+.op-case .op-case-story__description {
+    margin: 0 0 5px;
+
+    color: #403B45;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CASE STUDY — BENEFITS
+   ========================================================= */
+.op-case .op-case-benefits {
+    width: 100%;
+
+    margin: 0;
+    padding: 10px 40px 82px;
+}
+
+.op-case .op-case-benefits__inner {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 34px;
+}
+
+.op-case .op-case-benefit {
+    min-height: 170px;
+
+    padding: 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    border: 1px solid #DDDADF;
+    border-radius: 12px;
+}
+
+.op-case .op-case-benefit .op-case-icon {
+    width: 44px;
+    height: 44px;
+
+    margin-bottom: 20px;
+}
+
+.op-case .op-case-benefit h3 {
+    margin: 0;
+
+    color: #24212A;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+/* =========================================================
+   CASE STUDY — KEY SCREENS
+   ========================================================= */
+.op-case .op-case-screens {
+    position: relative;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 20px 40px 82px;
+
+    background: #F8F7F4;
+
+    overflow: hidden;
+}
+
+.op-case .op-case-screens::before {
+    display: none;
+}
+
+.op-case .op-case-screens__inner {
+    position: relative;
+
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: block;
+}
+
+
+/* =========================================================
+   CASE STUDY — KEY SCREENS LABEL
+   ========================================================= */
+.op-case .op-case-screens__label-wrap {
+    position: relative;
+
+    width: auto;
+
+    margin: 0 0 34px;
+
+    display: block;
+}
+
+.op-case .op-case-section-label {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 10px;
+
+    min-height: 38px;
+
+    margin: 0;
+    padding: 0 13px;
+
+    border: 1px solid #DDDADF;
+    border-radius: 999px;
+
+    color: #24212A;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+.op-case .op-case-section-label__dot {
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    flex: 0 0 20px;
+
+    border-radius: 50%;
+
+    background: #9279E4;
+}
+
+
+/* =========================================================
+   CASE STUDY — SCREENS GRID
+   ========================================================= */
+.op-case .op-case-screens__grid {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+
+    margin: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: 24px;
+
+    align-items: start;
+}
+
+
+/* FEATURED SCREEN */
+.op-case .op-case-screen--featured {
+    width: 100%;
+    min-width: 0;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+.op-case .op-case-screen--featured img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+
+    object-fit: contain;
+}
+
+
+/* FOUR SMALL SCREENS */
+.op-case .op-case-screens__right {
+    width: 100%;
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+.op-case .op-case-screens__right .op-case-screen {
+    width: 100%;
+    min-width: 0;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+}
+
+.op-case .op-case-screens__right img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   CASE STUDY — RESULT
+   ========================================================= */
+.op-case .op-case-result {
+    width: 100%;
+
+    margin: 0;
+    padding: 60px 40px;
+
+    background: #F1EDFC;
+}
+
+.op-case .op-case-result__inner {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.25fr .75fr;
+
+    gap: 70px;
+
+    align-items: stretch;
+}
+
+.op-case .op-case-result__content h2 {
+    margin: 0 0 28px;
+
+    color: #17141D;
+
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -.04em;
+}
+
+.op-case .op-case-result__highlight {
+    margin: 0 0 24px;
+
+    color: #7658D8;
+
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.op-case .op-case-result__text {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #24212A;
+
+    font-size: 19px;
+    line-height: 1.45;
+}
+
+.op-case .op-case-result__stat {
+    min-height: 210px;
+
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 22px;
+
+    background: rgba(255, 255, 255, .48);
+}
+
+.op-case .op-case-result__number {
+    color: #7658D8;
+
+    font-size: clamp(72px, 8vw, 110px);
+    font-weight: 400;
+    line-height: .95;
+    letter-spacing: -.05em;
+}
+
+.op-case .op-case-result__caption {
+    color: #7658D8;
+
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   CASE STUDY — TABLET
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* INTRO */
+    .op-case .op-case-intro {
+        padding: 135px 24px 60px;
+    }
+
+    .op-case .op-case-intro__grid {
+        grid-template-columns: 1fr;
+
+        gap: 48px;
+    }
+
+    .op-case .op-case-intro__main {
+        padding-right: 0;
+        padding-bottom: 48px;
+
+        border-right: 0;
+        border-bottom: 1px solid #DEDCE1;
+    }
+
+    .op-case .op-case-meta {
+        gap: 32px;
+    }
+
+
+    /* STORY */
+    .op-case .op-case-story {
+        padding: 0 24px 64px;
+    }
+
+    .op-case .op-case-story__inner {
+        grid-template-columns: 1fr;
+
+        gap: 48px;
+    }
+
+
+    /* BENEFITS */
+    .op-case .op-case-benefits {
+        padding: 0 24px 64px;
+    }
+
+    .op-case .op-case-benefits__inner {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+
+    /* KEY SCREENS */
+    .op-case .op-case-screens {
+        padding: 56px 24px 72px;
+    }
+
+    .op-case .op-case-screens__label-wrap {
+        margin-bottom: 32px;
+    }
+
+    .op-case .op-case-screens__grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .op-case .op-case-screens__right {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+
+    /* RESULT */
+    .op-case .op-case-result {
+        padding: 56px 24px;
+    }
+
+    .op-case .op-case-result__inner {
+        grid-template-columns: 1fr;
+
+        gap: 36px;
+    }
+}
+
+
+/* =========================================================
+   CASE STUDY — MOBILE
+   ========================================================= */
+@media (max-width: 520px) {
+
+    /* INTRO */
+    .op-case .op-case-intro {
+        padding: 125px 20px 52px;
+    }
+
+    .op-case .op-case-breadcrumbs {
+        margin-bottom: 24px;
+    }
+
+    .op-case .op-case-title {
+        margin-top: 24px;
+
+        font-size: 46px;
+    }
+
+    .op-case .op-case-lead {
+        font-size: 19px;
+    }
+
+    .op-case .op-case-meta {
+        grid-template-columns: 1fr;
+
+        gap: 26px;
+    }
+
+    .op-case .op-case-meta__item {
+        grid-template-columns:
+            44px minmax(0, 1fr);
+    }
+
+    .op-case .op-case-icon {
+        width: 44px;
+        height: 44px;
+
+        flex-basis: 44px;
+    }
+
+    .op-case .op-case-meta__item h3,
+    .op-case .op-case-story__item h3 {
+        font-size: 19px;
+    }
+
+
+    /* STORY */
+    .op-case .op-case-story {
+        padding: 0 20px 56px;
+    }
+
+    .op-case .op-case-story__visual {
+        border-radius: 18px;
+    }
+
+    .op-case .op-case-story__content {
+        gap: 34px;
+    }
+
+    .op-case .op-case-story__item {
+        grid-template-columns:
+            44px minmax(0, 1fr);
+    }
+
+    .op-case .op-case-story__headline {
+        font-size: 20px;
+    }
+
+
+    /* BENEFITS */
+    .op-case .op-case-benefits {
+        padding: 0 20px 56px;
+    }
+
+    .op-case .op-case-benefits__inner {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+    .op-case .op-case-benefit {
+        min-height: 150px;
+
+        padding: 20px 10px;
+    }
+
+    .op-case .op-case-benefit h3 {
+        font-size: 16px;
+    }
+
+
+    /* KEY SCREENS */
+    .op-case .op-case-screens {
+        padding: 48px 20px 64px;
+    }
+
+    .op-case .op-case-screens__label-wrap {
+        margin-bottom: 26px;
+    }
+
+    .op-case .op-case-section-label {
+        min-height: 36px;
+
+        padding: 0 12px;
+
+        font-size: 13px;
+    }
+
+    .op-case .op-case-section-label__dot {
+        width: 18px;
+        height: 18px;
+
+        flex-basis: 18px;
+    }
+
+    .op-case .op-case-screens__grid {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 16px;
+    }
+
+    .op-case .op-case-screens__right {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 16px;
+    }
+
+    .op-case .op-case-screen,
+    .op-case .op-case-screen--featured {
+        width: 100%;
+        max-width: none;
+    }
+
+    .op-case .op-case-screen img,
+    .op-case .op-case-screen--featured img,
+    .op-case .op-case-screens__right img {
+        display: block;
+
+        width: 100%;
+        max-width: none;
+        height: auto;
+
+        object-fit: contain;
+
+    }
+
+
+    /* RESULT */
+    .op-case .op-case-result {
+        padding: 48px 20px;
+    }
+
+    .op-case .op-case-result__content h2 {
+        font-size: 34px;
+    }
+
+    .op-case .op-case-result__highlight {
+        font-size: 23px;
+    }
+
+    .op-case .op-case-result__text {
+        font-size: 16px;
+    }
+
+    .op-case .op-case-result__stat {
+        min-height: 180px;
+    }
+}
+
+/* =========================================================
+   TAXAGENT — STORY VISUAL
+   ========================================================= */
+.op-case--taxagent .op-case__story-visual {
+    width: 100%;
+
+    margin-top: 48px;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+}
+
+.op-case--taxagent .op-case__story-visual img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+/* =========================================================
+   TAXAGENT — PROJECT-SPECIFIC
+   ========================================================= */
+/*
+   Taxagent uses the default Case Study layout from Part 9.
+
+   Structure:
+   - op-case-intro
+   - op-case-story
+   - op-case-benefits
+   - op-case-screens
+   - op-case-result
+
+   No additional layout overrides are required.
+*/
+.op-case--taxagent .op-case-story__visual {
+    border-radius: 24px;
+}
+
+.op-case--taxagent .op-case-story__visual img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 520px) {
+
+    .op-case--taxagent .op-case-story__visual {
+        border-radius: 18px;
+    }
+}
+
+/* =========================================================
+   HUISLEON — PROJECT-SPECIFIC
+   ========================================================= */
+/* =========================================================
+   HUISLEON — STORY
+   ========================================================= */
+.op-case--huisleon .op-case-story__description {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   HUISLEON — KEY SCREENS
+   ========================================================= */
+.op-case--huisleon .op-case-screens__grid {
+    align-items: stretch;
+}
+
+
+/* LARGE LEFT SCREEN */
+.op-case--huisleon .op-case-screen--featured {
+    display: flex;
+    align-items: stretch;
+}
+
+.op-case--huisleon .op-case-screen--featured img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* FOUR SMALL SCREENS */
+.op-case--huisleon .op-case-screens__right {
+    grid-template-rows:
+        repeat(2, minmax(0, 1fr));
+}
+
+.op-case--huisleon .op-case-screens__right img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+/* =========================================================
+   TIDE — PROJECT-SPECIFIC
+   ========================================================= */
+/* =========================================================
+   TIDE — STORY VISUAL
+   ========================================================= */
+.op-case--tide .op-case-story__visual {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: visible;
+
+    border-radius: 0;
+}
+
+.op-case--tide .op-case-story__visual img {
+    display: block;
+
+    width: 100%;
+    max-width: 620px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   TIDE — STORY TEXT
+   ========================================================= */
+.op-case--tide .op-case-story__description {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   TIDE — KEY SCREENS
+   ========================================================= */
+.op-case--tide .op-case-screens__grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 48px;
+
+    align-items: end;
+}
+
+
+/* =========================================================
+   TIDE — SCREEN
+   ========================================================= */
+.op-case--tide .op-case-screen {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    overflow: visible;
+
+    border-radius: 0;
+}
+
+.op-case--tide .op-case-screen img {
+    display: block;
+
+    width: 100%;
+    max-width: 245px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   TIDE — TABLET
+   ========================================================= */
+@media (max-width: 900px) {
+
+    .op-case--tide .op-case-screens__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 32px;
+    }
+}
+
+
+/* =========================================================
+   TIDE — MOBILE
+   ========================================================= */
+@media (max-width: 520px) {
+
+    .op-case--tide .op-case-story__visual {
+        border-radius: 0;
+    }
+
+    .op-case--tide .op-case-story__visual img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .op-case--tide .op-case-screens__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        width: 100%;
+
+        gap: 16px;
+    }
+
+    .op-case--tide .op-case-screen {
+        width: 100%;
+        max-width: none;
+    }
+
+    .op-case--tide .op-case-screen img {
+        display: block;
+
+        width: 100%;
+        max-width: none;
+        height: auto;
+
+        object-fit: contain;
+    }
+}
+
+/* =========================================================
+   LINKPLANNER — PROJECT-SPECIFIC
+   ========================================================= */
+/* =========================================================
+   LINKPLANNER — STORY
+   ========================================================= */
+.op-case--linkplanner .op-case-story__description {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   LINKPLANNER — FEATURED SCREEN
+   ========================================================= */
+.op-case--linkplanner .op-case-screen--featured {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.op-case--linkplanner .op-case-screen--featured img {
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+/* =========================================================
+   AI CHAT — PROJECT-SPECIFIC
+   ========================================================= */
+/* =========================================================
+   AI CHAT — STORY
+   ========================================================= */
+.op-case--ai .op-case-story__description {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   AI CHAT — TABLET
+   ========================================================= */
+@media (max-width: 900px) {
+
+    .op-case--ai .op-case-intro {
+        padding-top: 135px;
+    }
+}
+
+
+/* =========================================================
+   AI CHAT — MOBILE
+   ========================================================= */
+@media (max-width: 520px) {
+
+    .op-case--ai .op-case-intro {
+        padding-top: 125px;
+    }
+}
