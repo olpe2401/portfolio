@@ -817,3 +817,146 @@
         font-size: 16px;
     }
 }
+
+/* =========================================
+   ABOUT — HERO ENTRANCE ANIMATION
+   ========================================= */
+
+@keyframes opAboutHeroFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes opAboutHeroImageFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Left content */
+
+.op-about-hero__content .op-section-label {
+    animation: opAboutHeroFadeUp 0.65s ease 0.1s both;
+}
+
+.op-about-hero__title {
+    animation: opAboutHeroFadeUp 0.7s ease 0.25s both;
+}
+
+.op-about-hero__text {
+    animation: opAboutHeroFadeUp 0.7s ease 0.4s both;
+}
+
+.op-about-hero__actions {
+    animation: opAboutHeroFadeUp 0.7s ease 0.55s both;
+}
+
+/* Photo */
+
+.op-about-hero__visual img {
+    animation: opAboutHeroImageFade 0.9s ease 0.3s both;
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    .op-about-hero__content .op-section-label,
+    .op-about-hero__title,
+    .op-about-hero__text,
+    .op-about-hero__actions,
+    .op-about-hero__visual img {
+        animation: none;
+    }
+}
+
+/* =========================================
+   ABOUT — WHAT I DO STAGGERED REVEAL
+   ========================================= */
+
+.op-about-do__cards .op-about-card:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.op-about-do__cards .op-about-card:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.op-about-do__cards .op-about-card:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+/* Mobile — no stagger delay */
+
+@media (max-width: 700px) {
+    .op-about-do__cards .op-about-card {
+        transition-delay: 0s;
+    }
+}
+
+/* =========================================
+   ABOUT — DESIGN PRINCIPLES STAGGERED REVEAL
+   ========================================= */
+
+.op-about-principles__grid .op-principle:nth-child(2).op-reveal {
+    transition-delay: 0.1s;
+}
+
+.op-about-principles__grid .op-principle:nth-child(3).op-reveal {
+    transition-delay: 0.2s;
+}
+
+.op-about-principles__grid .op-principle:nth-child(4).op-reveal {
+    transition-delay: 0.3s;
+}
+
+/* Mobile — no stagger delay */
+
+@media (max-width: 700px) {
+    .op-about-principles__grid .op-principle.op-reveal {
+        transition-delay: 0s;
+    }
+}
+
+
+/* =========================================
+   ABOUT — GET IN TOUCH BUTTON REVEAL
+   ========================================= */
+
+@keyframes opAboutButtonFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.op-about-more__button.op-fade-reveal {
+    opacity: 0;
+}
+
+.op-about-more__button.op-fade-reveal.is-visible {
+    animation: opAboutButtonFadeIn 0.65s ease 0.2s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .op-about-more__button.op-fade-reveal {
+        opacity: 1;
+    }
+
+    .op-about-more__button.op-fade-reveal.is-visible {
+        animation: none;
+    }
+}

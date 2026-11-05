@@ -1205,3 +1205,764 @@
         padding-top: 125px;
     }
 }
+
+/* =========================================
+   LINKPLANNER — INTRO ENTRANCE ANIMATION
+   ========================================= */
+
+@keyframes opCaseIntroFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Breadcrumbs */
+
+.op-case--linkplanner .op-case-breadcrumbs {
+    animation: opCaseIntroFadeUp 0.6s ease 0.1s both;
+}
+
+/* Project label */
+
+.op-case--linkplanner .op-case-label {
+    animation: opCaseIntroFadeUp 0.65s ease 0.2s both;
+}
+
+/* Project title */
+
+.op-case--linkplanner .op-case-title {
+    animation: opCaseIntroFadeUp 0.7s ease 0.3s both;
+}
+
+/* Project description */
+
+.op-case--linkplanner .op-case-lead {
+    animation: opCaseIntroFadeUp 0.7s ease 0.45s both;
+}
+
+/* Project tags */
+
+.op-case--linkplanner .op-case-tags {
+    animation: opCaseIntroFadeUp 0.7s ease 0.6s both;
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    .op-case--linkplanner .op-case-breadcrumbs,
+    .op-case--linkplanner .op-case-label,
+    .op-case--linkplanner .op-case-title,
+    .op-case--linkplanner .op-case-lead,
+    .op-case--linkplanner .op-case-tags {
+        animation: none;
+    }
+}
+
+/* =========================================
+   LINKPLANNER — PROJECT META STAGGERED REVEAL
+   ========================================= */
+
+@media (min-width: 901px) {
+    .op-case--linkplanner .op-case-meta__item:nth-child(2).op-reveal {
+        transition-delay: 0.12s;
+    }
+
+    .op-case--linkplanner .op-case-meta__item:nth-child(3).op-reveal {
+        transition-delay: 0.24s;
+    }
+
+    .op-case--linkplanner .op-case-meta__item:nth-child(4).op-reveal {
+        transition-delay: 0.36s;
+    }
+}
+
+/* =========================================
+   LINKPLANNER — STORY TEXT STAGGERED REVEAL
+   ========================================= */
+
+@media (min-width: 901px) {
+    .op-case--linkplanner .op-case-story__item:nth-child(2).op-reveal {
+        transition-delay: 0.15s;
+    }
+}
+
+/* =========================================
+   LINKPLANNER — BENEFITS STAGGERED REVEAL
+   ========================================= */
+
+/* Desktop */
+
+@media (min-width: 901px) {
+    .op-case--linkplanner .op-case-benefit:nth-child(2).op-reveal {
+        transition-delay: 0.1s;
+    }
+
+    .op-case--linkplanner .op-case-benefit:nth-child(3).op-reveal {
+        transition-delay: 0.2s;
+    }
+
+    .op-case--linkplanner .op-case-benefit:nth-child(4).op-reveal {
+        transition-delay: 0.3s;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 521px) and (max-width: 900px) {
+    .op-case--linkplanner .op-case-benefit:nth-child(2).op-reveal,
+    .op-case--linkplanner .op-case-benefit:nth-child(4).op-reveal {
+        transition-delay: 0.1s;
+    }
+}
+
+/* =========================================
+   LINKPLANNER — KEY SCREENS STAGGERED REVEAL
+   ========================================= */
+
+/* Desktop */
+
+@media (min-width: 901px) {
+    .op-case--linkplanner .op-case-screens__right .op-case-screen:nth-child(2).op-reveal {
+        transition-delay: 0.1s;
+    }
+
+    .op-case--linkplanner .op-case-screens__right .op-case-screen:nth-child(3).op-reveal {
+        transition-delay: 0.2s;
+    }
+
+    .op-case--linkplanner .op-case-screens__right .op-case-screen:nth-child(4).op-reveal {
+        transition-delay: 0.3s;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 521px) and (max-width: 900px) {
+    .op-case--linkplanner .op-case-screens__right .op-case-screen:nth-child(2).op-reveal,
+    .op-case--linkplanner .op-case-screens__right .op-case-screen:nth-child(4).op-reveal {
+        transition-delay: 0.1s;
+    }
+}
+
+/* =========================================
+   LINKPLANNER — RESULT STAGGERED REVEAL
+   ========================================= */
+
+@media (min-width: 901px) {
+    .op-case--linkplanner .op-case-result__stat.op-reveal {
+        transition-delay: 0.15s;
+    }
+}
+
+/* =========================================
+   HUISLEON — INTRO ENTRANCE ANIMATION
+   ========================================= */
+
+.op-case--huisleon .op-case-breadcrumbs {
+    animation: opCaseIntroFadeUp 0.6s ease 0.1s both;
+}
+
+.op-case--huisleon .op-case-label {
+    animation: opCaseIntroFadeUp 0.65s ease 0.2s both;
+}
+
+.op-case--huisleon .op-case-title {
+    animation: opCaseIntroFadeUp 0.7s ease 0.3s both;
+}
+
+.op-case--huisleon .op-case-lead {
+    animation: opCaseIntroFadeUp 0.7s ease 0.45s both;
+}
+
+.op-case--huisleon .op-case-tags {
+    animation: opCaseIntroFadeUp 0.7s ease 0.6s both;
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .op-case--huisleon .op-case-breadcrumbs,
+    .op-case--huisleon .op-case-label,
+    .op-case--huisleon .op-case-title,
+    .op-case--huisleon .op-case-lead,
+    .op-case--huisleon .op-case-tags {
+        animation: none;
+    }
+}
+
+/* =========================================
+   HUISLEON — SCROLL ANIMATIONS
+   ========================================= */
+
+
+/* =========================================
+   1. INTRO — PROJECT META
+   ========================================= */
+
+@media (min-width: 901px) {
+
+    .op-case--huisleon .op-case-meta__item:nth-child(2).op-reveal {
+        transition-delay: 0.12s;
+    }
+
+    .op-case--huisleon .op-case-meta__item:nth-child(3).op-reveal {
+        transition-delay: 0.24s;
+    }
+
+    .op-case--huisleon .op-case-meta__item:nth-child(4).op-reveal {
+        transition-delay: 0.36s;
+    }
+}
+
+
+/* =========================================
+   2. CHALLENGE & APPROACH
+   ========================================= */
+
+@media (min-width: 901px) {
+
+    .op-case--huisleon .op-case-story__item:nth-child(2).op-reveal {
+        transition-delay: 0.15s;
+    }
+}
+
+
+/* =========================================
+   3. BENEFITS — STAGGERED CARDS
+   ========================================= */
+
+/* Desktop */
+
+@media (min-width: 901px) {
+
+    .op-case--huisleon .op-case-benefit:nth-child(2).op-reveal {
+        transition-delay: 0.1s;
+    }
+
+    .op-case--huisleon .op-case-benefit:nth-child(3).op-reveal {
+        transition-delay: 0.2s;
+    }
+
+    .op-case--huisleon .op-case-benefit:nth-child(4).op-reveal {
+        transition-delay: 0.3s;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 521px) and (max-width: 900px) {
+
+    .op-case--huisleon .op-case-benefit:nth-child(2).op-reveal,
+    .op-case--huisleon .op-case-benefit:nth-child(4).op-reveal {
+        transition-delay: 0.1s;
+    }
+}
+
+
+/* =========================================
+   4. KEY SCREENS — STAGGERED GALLERY
+   ========================================= */
+
+/* Desktop */
+
+@media (min-width: 901px) {
+
+    .op-case--huisleon .op-case-screens__right .op-case-screen:nth-child(2).op-reveal {
+        transition-delay: 0.1s;
+    }
+
+    .op-case--huisleon .op-case-screens__right .op-case-screen:nth-child(3).op-reveal {
+        transition-delay: 0.2s;
+    }
+
+    .op-case--huisleon .op-case-screens__right .op-case-screen:nth-child(4).op-reveal {
+        transition-delay: 0.3s;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 521px) and (max-width: 900px) {
+
+    .op-case--huisleon .op-case-screens__right .op-case-screen:nth-child(2).op-reveal,
+    .op-case--huisleon .op-case-screens__right .op-case-screen:nth-child(4).op-reveal {
+        transition-delay: 0.1s;
+    }
+}
+
+
+/* =========================================
+   5. THE RESULT
+   ========================================= */
+
+@media (min-width: 901px) {
+
+    .op-case--huisleon .op-case-result__stat.op-reveal {
+        transition-delay: 0.15s;
+    }
+}
+
+/* =========================================
+   TAXAGENT — ANIMATIONS
+   ========================================= */
+
+
+/* =========================================
+   1. INTRO — ENTRANCE ANIMATION
+   ========================================= */
+
+.op-case--taxagent .op-case-breadcrumbs {
+    animation: opCaseIntroFadeUp 0.6s ease 0.1s both;
+}
+
+.op-case--taxagent .op-case-label {
+    animation: opCaseIntroFadeUp 0.65s ease 0.2s both;
+}
+
+.op-case--taxagent .op-case-title {
+    animation: opCaseIntroFadeUp 0.7s ease 0.3s both;
+}
+
+.op-case--taxagent .op-case-lead {
+    animation: opCaseIntroFadeUp 0.7s ease 0.45s both;
+}
+
+.op-case--taxagent .op-case-tags {
+    animation: opCaseIntroFadeUp 0.7s ease 0.6s both;
+}
+
+
+/* =========================================
+   2. INTRO — PROJECT META
+   ========================================= */
+
+@media (min-width: 901px) {
+
+    .op-case--taxagent .op-case-meta__item:nth-child(2).op-reveal {
+        transition-delay: 0.12s;
+    }
+
+    .op-case--taxagent .op-case-meta__item:nth-child(3).op-reveal {
+        transition-delay: 0.24s;
+    }
+
+    .op-case--taxagent .op-case-meta__item:nth-child(4).op-reveal {
+        transition-delay: 0.36s;
+    }
+}
+
+
+/* =========================================
+   3. CHALLENGE & APPROACH
+   ========================================= */
+
+@media (min-width: 901px) {
+
+    .op-case--taxagent .op-case-story__item:nth-child(2).op-reveal {
+        transition-delay: 0.15s;
+    }
+}
+
+
+/* =========================================
+   4. BENEFITS — STAGGERED CARDS
+   ========================================= */
+
+/* Desktop */
+
+@media (min-width: 901px) {
+
+    .op-case--taxagent .op-case-benefit:nth-child(2).op-reveal {
+        transition-delay: 0.1s;
+    }
+
+    .op-case--taxagent .op-case-benefit:nth-child(3).op-reveal {
+        transition-delay: 0.2s;
+    }
+
+    .op-case--taxagent .op-case-benefit:nth-child(4).op-reveal {
+        transition-delay: 0.3s;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 521px) and (max-width: 900px) {
+
+    .op-case--taxagent .op-case-benefit:nth-child(2).op-reveal,
+    .op-case--taxagent .op-case-benefit:nth-child(4).op-reveal {
+        transition-delay: 0.1s;
+    }
+}
+
+
+/* =========================================
+   5. KEY SCREENS — STAGGERED GALLERY
+   ========================================= */
+
+/* Desktop */
+
+@media (min-width: 901px) {
+
+    .op-case--taxagent .op-case-screens__right .op-case-screen:nth-child(2).op-reveal {
+        transition-delay: 0.1s;
+    }
+
+    .op-case--taxagent .op-case-screens__right .op-case-screen:nth-child(3).op-reveal {
+        transition-delay: 0.2s;
+    }
+
+    .op-case--taxagent .op-case-screens__right .op-case-screen:nth-child(4).op-reveal {
+        transition-delay: 0.3s;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 521px) and (max-width: 900px) {
+
+    .op-case--taxagent .op-case-screens__right .op-case-screen:nth-child(2).op-reveal,
+    .op-case--taxagent .op-case-screens__right .op-case-screen:nth-child(4).op-reveal {
+        transition-delay: 0.1s;
+    }
+}
+
+
+/* =========================================
+   6. THE RESULT
+   ========================================= */
+
+@media (min-width: 901px) {
+
+    .op-case--taxagent .op-case-result__stat.op-reveal {
+        transition-delay: 0.15s;
+    }
+}
+
+
+/* =========================================
+   7. ACCESSIBILITY — REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .op-case--taxagent .op-case-breadcrumbs,
+    .op-case--taxagent .op-case-label,
+    .op-case--taxagent .op-case-title,
+    .op-case--taxagent .op-case-lead,
+    .op-case--taxagent .op-case-tags {
+        animation: none;
+    }
+}
+
+/* =========================================
+   AI CHAT — ANIMATIONS
+   ========================================= */
+
+
+/* =========================================
+   1. INTRO — ENTRANCE ANIMATION
+   ========================================= */
+
+.op-case--ai .op-case-breadcrumbs {
+    animation: opCaseIntroFadeUp 0.6s ease 0.1s both;
+}
+
+.op-case--ai .op-case-label {
+    animation: opCaseIntroFadeUp 0.65s ease 0.2s both;
+}
+
+.op-case--ai .op-case-title {
+    animation: opCaseIntroFadeUp 0.7s ease 0.3s both;
+}
+
+.op-case--ai .op-case-lead {
+    animation: opCaseIntroFadeUp 0.7s ease 0.45s both;
+}
+
+.op-case--ai .op-case-tags {
+    animation: opCaseIntroFadeUp 0.7s ease 0.6s both;
+}
+
+
+/* =========================================
+   2. INTRO — PROJECT META
+   ========================================= */
+
+@media (min-width: 901px) {
+
+    .op-case--ai .op-case-meta__item:nth-child(2).op-reveal {
+        transition-delay: 0.12s;
+    }
+
+    .op-case--ai .op-case-meta__item:nth-child(3).op-reveal {
+        transition-delay: 0.24s;
+    }
+
+    .op-case--ai .op-case-meta__item:nth-child(4).op-reveal {
+        transition-delay: 0.36s;
+    }
+}
+
+
+/* =========================================
+   3. CHALLENGE & APPROACH
+   ========================================= */
+
+@media (min-width: 901px) {
+
+    .op-case--ai .op-case-story__item:nth-child(2).op-reveal {
+        transition-delay: 0.15s;
+    }
+}
+
+
+/* =========================================
+   4. BENEFITS — STAGGERED CARDS
+   ========================================= */
+
+/* Desktop */
+
+@media (min-width: 901px) {
+
+    .op-case--ai .op-case-benefit:nth-child(2).op-reveal {
+        transition-delay: 0.1s;
+    }
+
+    .op-case--ai .op-case-benefit:nth-child(3).op-reveal {
+        transition-delay: 0.2s;
+    }
+
+    .op-case--ai .op-case-benefit:nth-child(4).op-reveal {
+        transition-delay: 0.3s;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 521px) and (max-width: 900px) {
+
+    .op-case--ai .op-case-benefit:nth-child(2).op-reveal,
+    .op-case--ai .op-case-benefit:nth-child(4).op-reveal {
+        transition-delay: 0.1s;
+    }
+}
+
+
+/* =========================================
+   5. KEY SCREENS — STAGGERED GALLERY
+   ========================================= */
+
+/* Desktop */
+
+@media (min-width: 901px) {
+
+    .op-case--ai .op-case-screens__right .op-case-screen:nth-child(2).op-reveal {
+        transition-delay: 0.1s;
+    }
+
+    .op-case--ai .op-case-screens__right .op-case-screen:nth-child(3).op-reveal {
+        transition-delay: 0.2s;
+    }
+
+    .op-case--ai .op-case-screens__right .op-case-screen:nth-child(4).op-reveal {
+        transition-delay: 0.3s;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 521px) and (max-width: 900px) {
+
+    .op-case--ai .op-case-screens__right .op-case-screen:nth-child(2).op-reveal,
+    .op-case--ai .op-case-screens__right .op-case-screen:nth-child(4).op-reveal {
+        transition-delay: 0.1s;
+    }
+}
+
+
+/* =========================================
+   6. THE RESULT
+   ========================================= */
+
+@media (min-width: 901px) {
+
+    .op-case--ai .op-case-result__stat.op-reveal {
+        transition-delay: 0.15s;
+    }
+}
+
+
+/* =========================================
+   7. ACCESSIBILITY — REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .op-case--ai .op-case-breadcrumbs,
+    .op-case--ai .op-case-label,
+    .op-case--ai .op-case-title,
+    .op-case--ai .op-case-lead,
+    .op-case--ai .op-case-tags {
+        animation: none;
+    }
+}
+
+/* =========================================
+   TIDE — ANIMATIONS
+   ========================================= */
+
+
+/* =========================================
+   1. INTRO — ENTRANCE ANIMATION
+   ========================================= */
+
+.op-case--tide .op-case-breadcrumbs {
+    animation: opCaseIntroFadeUp 0.6s ease 0.1s both;
+}
+
+.op-case--tide .op-case-label {
+    animation: opCaseIntroFadeUp 0.65s ease 0.2s both;
+}
+
+.op-case--tide .op-case-title {
+    animation: opCaseIntroFadeUp 0.7s ease 0.3s both;
+}
+
+.op-case--tide .op-case-lead {
+    animation: opCaseIntroFadeUp 0.7s ease 0.45s both;
+}
+
+.op-case--tide .op-case-tags {
+    animation: opCaseIntroFadeUp 0.7s ease 0.6s both;
+}
+
+
+/* =========================================
+   2. INTRO — PROJECT META
+   ========================================= */
+
+@media (min-width: 901px) {
+
+    .op-case--tide .op-case-meta__item:nth-child(2).op-reveal {
+        transition-delay: 0.12s;
+    }
+
+    .op-case--tide .op-case-meta__item:nth-child(3).op-reveal {
+        transition-delay: 0.24s;
+    }
+
+    .op-case--tide .op-case-meta__item:nth-child(4).op-reveal {
+        transition-delay: 0.36s;
+    }
+}
+
+
+/* =========================================
+   3. CHALLENGE & APPROACH
+   ========================================= */
+
+@media (min-width: 901px) {
+
+    .op-case--tide .op-case-story__item:nth-child(2).op-reveal {
+        transition-delay: 0.15s;
+    }
+}
+
+
+/* =========================================
+   4. BENEFITS — STAGGERED CARDS
+   ========================================= */
+
+/* Desktop */
+
+@media (min-width: 901px) {
+
+    .op-case--tide .op-case-benefit:nth-child(2).op-reveal {
+        transition-delay: 0.1s;
+    }
+
+    .op-case--tide .op-case-benefit:nth-child(3).op-reveal {
+        transition-delay: 0.2s;
+    }
+
+    .op-case--tide .op-case-benefit:nth-child(4).op-reveal {
+        transition-delay: 0.3s;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 521px) and (max-width: 900px) {
+
+    .op-case--tide .op-case-benefit:nth-child(2).op-reveal,
+    .op-case--tide .op-case-benefit:nth-child(4).op-reveal {
+        transition-delay: 0.1s;
+    }
+}
+
+
+/* =========================================
+   5. KEY SCREENS — IPHONE MOCKUPS
+   ========================================= */
+
+/* Desktop — Four phones appear in sequence */
+
+@media (min-width: 901px) {
+
+    .op-case--tide .op-case-screens__grid > .op-case-screen:nth-child(2).op-reveal {
+        transition-delay: 0.12s;
+    }
+
+    .op-case--tide .op-case-screens__grid > .op-case-screen:nth-child(3).op-reveal {
+        transition-delay: 0.24s;
+    }
+
+    .op-case--tide .op-case-screens__grid > .op-case-screen:nth-child(4).op-reveal {
+        transition-delay: 0.36s;
+    }
+}
+
+/* Tablet — Pairwise reveal */
+
+@media (min-width: 521px) and (max-width: 900px) {
+
+    .op-case--tide .op-case-screens__grid > .op-case-screen:nth-child(2).op-reveal,
+    .op-case--tide .op-case-screens__grid > .op-case-screen:nth-child(4).op-reveal {
+        transition-delay: 0.12s;
+    }
+}
+
+
+/* =========================================
+   6. THE RESULT
+   ========================================= */
+
+@media (min-width: 901px) {
+
+    .op-case--tide .op-case-result__stat.op-reveal {
+        transition-delay: 0.15s;
+    }
+}
+
+
+/* =========================================
+   7. ACCESSIBILITY — REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .op-case--tide .op-case-breadcrumbs,
+    .op-case--tide .op-case-label,
+    .op-case--tide .op-case-title,
+    .op-case--tide .op-case-lead,
+    .op-case--tide .op-case-tags {
+        animation: none;
+    }
+}
