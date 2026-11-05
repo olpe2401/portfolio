@@ -1245,3 +1245,97 @@
         color: #ffffff;
     }
 }
+
+
+/* =========================================
+   WORK — PROJECT STAGGERED REVEAL
+   ========================================= */
+
+.op-work-project__content.op-reveal {
+    transition-delay: 0.12s;
+}
+
+/* =========================================
+   WORK — HERO ENTRANCE ANIMATION
+   ========================================= */
+
+@keyframes opWorkHeroFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes opWorkHeroVisualEnter {
+    from {
+        opacity: 0;
+        transform: translate(24px, 12px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+@keyframes opWorkHeroButtonFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Left content */
+
+.op-work-hero__label {
+    animation: opWorkHeroFadeUp 0.65s ease 0.1s both;
+}
+
+.op-work-hero__title {
+    animation: opWorkHeroFadeUp 0.7s ease 0.25s both;
+}
+
+.op-work-hero__text {
+    animation: opWorkHeroFadeUp 0.7s ease 0.4s both;
+}
+
+.op-work-hero__button {
+    animation: opWorkHeroButtonFade 0.7s ease 0.55s both;
+}
+
+
+/* Right illustration */
+
+.op-work-hero__image {
+    animation: opWorkHeroVisualEnter 0.9s ease 0.3s both;
+}
+
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    .op-work-hero__label,
+    .op-work-hero__title,
+    .op-work-hero__text,
+    .op-work-hero__button,
+    .op-work-hero__image {
+        animation: none;
+    }
+}
+
+
+/* =========================================
+   OTHER PROJECTS — STAGGERED REVEAL
+   ========================================= */
+
+.op-other-projects__grid .op-other-card:nth-child(2).op-reveal {
+    transition-delay: 0.12s;
+}

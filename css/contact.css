@@ -694,3 +694,138 @@
         margin-top: 36px;
     }
 }
+
+/* =========================================
+   CONTACT — HERO ENTRANCE ANIMATION
+   ========================================= */
+
+@keyframes opContactHeroFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes opContactHeroImageFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hero content */
+
+.op-contact-hero__content .op-section-label {
+    animation: opContactHeroFadeUp 0.65s ease 0.1s both;
+}
+
+.op-contact-hero__title {
+    animation: opContactHeroFadeUp 0.7s ease 0.25s both;
+}
+
+.op-contact-hero__text {
+    animation: opContactHeroFadeUp 0.7s ease 0.4s both;
+}
+
+/* Hero image */
+
+.op-contact-hero__visual img {
+    animation: opContactHeroImageFade 0.9s ease 0.3s both;
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .op-contact-hero__content .op-section-label,
+    .op-contact-hero__title,
+    .op-contact-hero__text,
+    .op-contact-hero__visual img {
+        animation: none;
+    }
+}
+
+/* =========================================
+   CONTACT — GET IN TOUCH CARDS REVEAL
+   ========================================= */
+
+.op-contact .op-contact-card.op-fade-reveal {
+    opacity: 0;
+
+    transition:
+            opacity 0.65s ease,
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+}
+
+.op-contact .op-contact-card.op-fade-reveal.is-visible {
+    opacity: 1;
+}
+
+/* Staggered appearance */
+
+.op-contact-links__grid .op-contact-card:nth-child(2).op-fade-reveal {
+    transition-delay: 0.12s, 0s, 0s;
+}
+
+.op-contact-links__grid .op-contact-card:nth-child(3).op-fade-reveal {
+    transition-delay: 0.24s, 0s, 0s;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+    .op-contact-links__grid .op-contact-card.op-fade-reveal {
+        transition-delay: 0s;
+    }
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .op-contact .op-contact-card.op-fade-reveal {
+        opacity: 1;
+        transition: none;
+    }
+}
+
+/* =========================================
+   CONTACT — BOTTOM BUTTON REVEAL
+   ========================================= */
+
+@keyframes opContactButtonFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.op-contact .op-contact-btn.op-fade-reveal {
+    opacity: 0;
+}
+
+.op-contact .op-contact-btn.op-fade-reveal.is-visible {
+    animation: opContactButtonFadeIn 0.65s ease 0.2s both;
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .op-contact .op-contact-btn.op-fade-reveal {
+        opacity: 1;
+    }
+
+    .op-contact .op-contact-btn.op-fade-reveal.is-visible {
+        animation: none;
+    }
+}
